@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <title>Miller High Life - Loyalty Card</title>
+    <link rel="icon" type="image/png" href="http://www.millerhighlife.com/assets/images/favicon.png">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/hover.css" media="all"/>
+    <link rel="stylesheet" href="css/global.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+
+    <!-- Facebook SDK  -- >
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '794563447247248',
+      xfbml      : true,
+      version    : 'v2.3'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+    
+    <!-- This is the Parallax Header -->
+    <div class="parallax-background">
+      <!--<div class="intro-text">/div> -->
+    </div>
+
+    <!-- Parallax Content Starts Here -->
+  <div class="parallax-content">
+    <!-- This is where the sticky nav belongs -->
+    <h1><img src="img/title-the-champagne-of-beers.png" width="400px"></h1>
+    <div class="sticky">
+      <nav class="top-bar sticky" data-topbar role="navigation" data-options="sticky_on: large medium small">
+      <ul>
+      <li><img src="img/graphic-star.png"/></li>
+      <li><a class="hvr-underline-from-center" href="#what">What?</a></li>
+      <li><img src="img/graphic-star.png"/></li>
+       <li><a class="hvr-underline-from-center" href="#how">How?</a></li>
+      <li><img src="img/graphic-star.png"/></li>
+      <li><div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div></li>
+      <li><img src="img/graphic-star.png"/></li>
+    </ul>
+
+     
+      </nav>
+    </div> 
+    <!-- Row 1 -->
+  <section id="what">
+    <div class="row">
+      <div class="small-12 medium-12 large-6 columns row1">
+        <h2>What is the High Life Loyalty Card?</h2>
+        <p>A digital membership card that lives in passbook and gives it's members hyper-relevant benefits right from their phones.</p>
+        <li>Geo-targeted offers</li>
+        <li>Exclusive experiences</li>
+        <li>Contextually relevant content</li>
+        <li>Promotional opportunities</li>
+      </div>
+
+      <div class="small-12 medium-12 large-6 columns">
+        <img src="img/loyaltycard.png">
+      </div>
+  </section>
+
+  <!-- Row 2 -->
+  <section id="how">
+    <div class="row">
+      <div class="small-12 medium-12 large-8 columns">
+        <img src="img/how.jpg">
+      </div>
+
+      <div class="small-12 medium-12 large-4 columns row2">
+        <h2>What is the High Life Loyalty Card?</h2>
+        <p>A digital membership card that lives in passbook and gives it's members hyper-relevant benefits right from their phones.</p>
+        <li>General</li>
+        <li>Geo Fenced</li>
+        <li>Reward</li>
+      </div>
+    </section>
+     
+
+     <!-- Row 3 -->
+  <section id="what">
+    <div class="row">
+      <div class="row">
+      <div class="medium-6 columns">
+        <div class="box">
+          <div class="box-icon">
+            <span class="fi-telephone"></span>
+          </div>
+          <div class="info">
+            <h4 class="text-center">Apple Passbook Pass</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem architecto perferendis quas aperiam debitis dolor soluta!</p>
+            <a href="https://api.passdock.com/passes/8954/9b346429e0158f04460606c50630e1b25b151152.pkpass" class="button">Add to Passbook</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="small-12 medium-12 large-6 columns">
+        <img src="img/loyaltycard.png">
+      </div>
+  </section>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
