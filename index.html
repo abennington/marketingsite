@@ -13,25 +13,16 @@
   </head>
   <body>
 
-    <!-- Facebook SDK  -- >
-    <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '794563447247248',
-      xfbml      : true,
-      version    : 'v2.3'
-    });
-  };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-    
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=794563447247248&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+   
     <!-- This is the Parallax Header -->
     <div class="parallax-background">
       <!--<div class="intro-text">/div> -->
@@ -49,7 +40,7 @@
       <li><img src="img/graphic-star.png"/></li>
        <li><a class="hvr-underline-from-center" href="#how">How?</a></li>
       <li><img src="img/graphic-star.png"/></li>
-      <li><div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div></li>
+      <li><div class="fb-like" data-href="http://iam.colum.edu/students/andrew.bennington/aim2/marketingsite/" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div></li>
       <li><img src="img/graphic-star.png"/></li>
     </ul>
 
@@ -103,6 +94,11 @@
             <h4 class="text-center">Apple Passbook Pass</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem architecto perferendis quas aperiam debitis dolor soluta!</p>
             <a href="https://api.passdock.com/passes/8954/9b346429e0158f04460606c50630e1b25b151152.pkpass" class="button">Add to Passbook</a>
+             <fb:login-button data-size="xlarge" auto_logout_link="true" scope="public_profile,email,user_likes" onlogin="checkLoginState();">
+</fb:login-button>
+
+<div id="status">
+</div>
           </div>
         </div>
 
