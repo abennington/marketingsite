@@ -56,6 +56,11 @@ body h1 img {
   padding-top: 10px;
 }
 
+/* Hide Mobile Navigation */
+.mobile-nav {
+  display: none;
+}
+
 /* Sticky Nav CSS */
 .top-bar {
   background: #A5001B;
@@ -89,13 +94,9 @@ body .sticky {
 
 body .fixed {
   opacity: 0.95;
-  -webkit-transition: background-image 0.2s ease-in-out;
-  transition: background-image 0.2s ease-in-out;
-  transition-timing-function: cubic-bezier(0.42,0,1,1);
-  -webkit-transition-timing-function: cubic-bezier(0,0,0.58,1);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 250px;
+  background-size: 110px;
   background-image: url(../img/title-the-champagne-of-beers.png);
   
 }
@@ -141,13 +142,18 @@ body .fixed {
 
 .box-icon {
   background-color: #A5001B;
-  border-radius: 50%;
+  border-radius: 35%;
   display: table;
   height: 100px;
   margin: 0 auto;
   width: 100px;
   margin-top: -61px;
-  font-size: 3rem; }
+  font-size: 3rem; 
+  background-image:  url(../img/graphic-mhl-logo.png);
+  background-size: cover;
+  background-position: 0px -26px
+
+}
   .box-icon span {
     color: #fff;
     display: table-cell;
@@ -227,16 +233,35 @@ body .fixed {
   border-left: 40px solid #41637C;
 }
 
+@media (min-width: 1200px) {
+
+
+}
+
+
 
 @media (max-width: 767px) {
-  .e {
-    display: none;
-  }
 
+/* Hiding Desktop Nav */
+.top-bar{
+  display: none;
+}
+.mobile-nav {
+  z-index: 1000;
+  display: initial;
+}
+.e {
+  display: none;
+}
+
+#desktop-header {
+  display: none;
+}
   .parallax-content {
   padding: 50px;
 }
 .parallax-background {
+  display: none;
   height: 130px;
   top: -50px;
   background: url("../img/highlife_card.jpg");
@@ -252,7 +277,7 @@ body .fixed {
 .parallax-content {
   max-width: 100%;
   position: relative;
-  top: 80px;
+  top: 0px;
   font-size: 20px;
   color: #FFF;
   background-color: #000;
@@ -261,6 +286,10 @@ body .fixed {
 body .fixed {
   background-image: none;  
 }
+
+}
+
+.box-icon {
 
 }
 
