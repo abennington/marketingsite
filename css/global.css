@@ -53,9 +53,12 @@ body h1 img {
 }
 
 .row2{
-  padding-top: 10px;
+  padding-top: 40px;
 }
 
+.row3{
+  padding-top: 60px;
+}
 /* Hide Mobile Navigation */
 .mobile-nav {
   display: none;
@@ -250,8 +253,17 @@ body .fixed {
   z-index: 1000;
   display: initial;
 }
-.e {
-  display: none;
+
+.row1{
+  padding-top: 20px;
+}
+
+.row2{
+  padding-top: 20px;
+}
+
+.row3{
+  padding-top: 20px;
 }
 
 #desktop-header {
